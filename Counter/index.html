@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counter</title>
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 1em sans-serif;
+      background-color: #f1f5f8;
+      color: #102a42;
+      line-height: 1.5;
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #102a42;
+      font-size: 4.5rem;
+      text-transform: capitalize;
+      line-height: 1;
+      letter-spacing: .5rem;
+      margin-bottom: .3rem;
+    }
+
+    span {
+      font-size: 6rem;
+      font-weight: 900;
+    }
+
+    .bnt {
+      background-color: transparent;
+      border-radius: .5rem;
+      color: #000;
+      display: inline-block;
+      transition: all .3s ease;
+      padding: 0.375rem 0.75rem;
+      border: 2px solid #000;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+      font-weight: 100;
+      text-transform: capitalize;
+      letter-spacing: .5rem;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+
+    .bnt:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>counter</h1>
+      <span id='value'>0</span>
+      <div class="button-container">
+        <button type="button" class="bnt btn-decrease">decrease</button>
+        <button type="button" class="bnt btn-reset">reset</button>
+        <button type="button" class="bnt btn-increase">increase</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
