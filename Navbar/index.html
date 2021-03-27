@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 1em sans-serif;
+      background-color: #f1f5f8;
+      color: #102a42;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    nav {
+      background-color: #f1f5f8;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .4rem;
+    }
+
+    h2 {
+      color: black;
+      font-size: 1.6rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      letter-spacing: .2rem;
+      line-height: 1;
+    }
+
+    h2 span {
+      color: #125ca1;
+    }
+
+    .nav-toggle {
+      font-size: 1.5rem;
+      color: #125ca1;
+      background-color: transparent;
+      border-color: transparent;
+      transition: all .3s ease;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 800px) {
+      .nav-toggle {
+        display: none !important;
+      }
+
+      .links {
+        height: auto !important;
+        display: flex !important;
+      }
+
+      .social-icons {
+        display: flex !important;
+      }
+    }
+
+
+    .links {
+      overflow: hidden;
+      transition: all .3s ease;
+      height: 0;
+    }
+
+    .links a {
+      margin: 0 .6rem;
+      color: #125ca1;
+      font-size: 1rem;
+      font-weight: 100;
+      text-transform: capitalize;
+      letter-spacing: .3rem;
+      transition: all .3s ease;
+      display: block;
+    }
+
+    .show-links {
+      height: 10rem;
+    }
+
+    .links a:hover {
+      color: black;
+    }
+
+    .social-icons {
+      display: none;
+    }
+
+    .social-icons a {
+      display: block;
+      margin: 0 .4rem;
+      color: #125ca1;
+      font-size: 1.1rem;
+      transition: all .3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #102a42;
+    }
+
+    .fa-times {
+      display: none;
+    }
+
+    .times .fa-times {
+      display: block;
+    }
+
+    .times .fa-bars {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+        <h2>Coding <span>Addict</span></h2>
+        <button class="nav-toggle" type="button">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">projects</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-sketch"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
