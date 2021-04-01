@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="gam.css" />
+  </head>
+
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+    <div class="control-buttons-over" style="display: none;">
+      <span>Game Over</span>
+    </div>
+    <div class="control-statistics" style="display: none;">
+      <div class="control-statistics-st">
+        <div class="statistics-name">Hello: <span></span></div>
+        <div class="statistics-timer">Timer: <span>5: 00</span></div>
+        <div class="statistics-tries">Wrong Tries: <span>0</span></div>
+      </div>
+      <span>you won</span>
+    </div>
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="timer">Timer: <span>5: 00</span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <!-- #1 -->
+      <div class="game-block" data-icon="android">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-android"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="android">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-android"></i>
+        </div>
+      </div>
+
+      <!-- #2 -->
+      <div class="game-block" data-icon="apple">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-apple"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="apple">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-apple"></i>
+        </div>
+      </div>
+
+      <!-- #3 -->
+      <div class="game-block" data-icon="ankh">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-ankh"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="ankh">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-ankh"></i>
+        </div>
+      </div>
+
+      <!-- #4 -->
+      <div class="game-block" data-icon="biohazard">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-biohazard"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="biohazard">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-biohazard"></i>
+        </div>
+      </div>
+
+      <!-- #5 -->
+      <div class="game-block" data-icon="codepen">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-codepen"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="codepen">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-codepen"></i>
+        </div>
+      </div>
+
+      <!-- #6 -->
+      <div class="game-block" data-icon="cookie">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-cookie-bite"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="cookie">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-cookie-bite"></i>
+        </div>
+      </div>
+
+      <!-- #7 -->
+      <div class="game-block" data-icon="fighter">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-fighter-jet"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="fighter">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-fighter-jet"></i>
+        </div>
+      </div>
+
+      <!-- #8 -->
+      <div class="game-block" data-icon="docker">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-docker"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="docker">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-docker"></i>
+        </div>
+      </div>
+
+      <!-- #9 -->
+      <div class="game-block" data-icon="connectdevelop">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-connectdevelop"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="connectdevelop">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fab fa-connectdevelop"></i>
+        </div>
+      </div>
+
+      <!-- #10 -->
+      <div class="game-block" data-icon="branch">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-code-branch"></i>
+        </div>
+      </div>
+      <div class="game-block" data-icon="branch">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fas fa-code-branch"></i>
+        </div>
+      </div>
+    </div>
+
+    <audio id="success" src="./audio/success.mp4" preload="auto"></audio>
+    <audio id="fail" src="./audio/fail.mp4" preload="auto"></audio>
+
+    <script src="./games.js"></script>
+  </body>
+</html>
